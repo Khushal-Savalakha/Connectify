@@ -1,0 +1,75 @@
+.widget {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 0px; /* Remove the margin-bottom here */
+    height:50%;
+}
+
+.widget__top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+.widget__infoIcon {
+    color: gray;
+}
+
+.widget__body {
+    margin-top: 10px;
+    flex: 1;
+}
+
+.widget__options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget__options li {
+    margin-bottom: 10px;
+}
+
+.widget__options li:last-child {
+    margin-bottom: 0; /* Make sure there's no margin at the last item */
+}
+
+.widget__options h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0073b1;
+    cursor: pointer;
+}
+
+.widget__options p {
+    font-size: 12px;
+    color: gray;
+}
+
+.widget__options li:hover h4 {
+    text-decoration: underline;
+}
+
+.widget__options li:hover {
+    background-color: #f3f2ef;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.widget__infoIcon{
+    color: #000;
+}

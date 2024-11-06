@@ -1,0 +1,64 @@
+.notifications-page {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #f3f2ef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.notifications__card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.notifications__avatar {
+    margin-right: 15px;
+}
+
+.notifications__info {
+    flex-grow: 1;
+}
+
+.notifications__info-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.notifications__info-subtitle {
+    margin: 5px 0;
+    color: #666;
+}
+
+.notifications__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.notifications__button--accept {
+    background-color: #0a66c2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.notifications__button--reject {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.notifications__button--accept:hover, 
+.notifications__button--reject:hover {
+    opacity: 0.9;
+}

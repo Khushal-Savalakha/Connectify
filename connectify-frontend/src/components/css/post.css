@@ -1,0 +1,91 @@
+.posts {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.posts .post__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posts .post__headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.posts .post__headerLeft .MuiAvatar-root {
+    margin-left: -5px;
+    margin-top: 5px;
+    margin-right: 10px; /* Adds spacing between the avatar and the profile details */
+    padding: 2px; /* Adds a little padding to the avatar */
+}
+
+.posts .post__profile_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts .post__profile_details h3 {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 2px; /* Adds space below the name */
+}
+
+.posts .post__profile_details p {
+    font-size: 12px;
+    margin: 0;
+    color: #666; /* Light gray for a subtle effect */
+}
+
+.posts .post__headerRight {
+    cursor: pointer;
+    color: #666; /* Subtle color for the three dots */
+}
+
+/* New CSS for the post body and footer */
+
+.post__body {
+    margin-top: 10px;
+}
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.post__footerOption {
+    display: flex;
+    align-items: center;
+    color: #666;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.post__footerOption:hover {
+    background-color: #f3f2ef;
+    border-radius: 5px;
+}
+
+.post__footerOption span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.post__icon {
+    font-size: 18px;
+    color: #666;
+}
+
+/* New CSS for the post image */
+.post__image {
+    max-width: 100%; /* Ensures the image does not exceed the width of the container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 10px; /* Adds a slight rounding to the corners for better aesthetics */
+    margin-top: 10px; /* Adds space above the image */
+}

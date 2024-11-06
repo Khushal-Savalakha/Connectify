@@ -1,0 +1,157 @@
+/* General Layout */
+.network-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f3f6f8;
+    font-family: 'Arial', sans-serif;
+}
+
+.network-page__content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Connections Section */
+.network-page__connections {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sort-options {
+    color: #0073b1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Connection Card Styling */
+.connection-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.connection-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.connection-card__avatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+}
+
+.connection-card__details {
+    flex: 1;
+}
+
+.connection-card__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.connection-card__description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.connection-card__time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+}
+
+/* Message Button */
+.connection-card__messageButton {
+    border-color: #0073b1;
+    color: #0073b1;
+    text-transform: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.connection-card__messageButton:hover {
+    background-color: rgba(0, 115, 177, 0.1);
+}
+
+/* Sidebar Styling */
+.network-page__sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    height: 30vh;
+}
+
+.ad-section {
+    background-color: #f3f6f8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ad-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.ad-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ad-button {
+    background-color: #0073b1;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: none;
+}
+
+.ad-button:hover {
+    background-color: #005f8f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .network-page__content {
+        flex-direction: column;
+    }
+
+    .network-page__sidebar {
+        margin-top: 20px;
+    }
+
+    .connection-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .connection-card__avatar {
+        margin-bottom: 10px;
+    }
+}

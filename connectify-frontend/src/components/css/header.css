@@ -1,0 +1,274 @@
+.header {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15%;
+    justify-content: space-between;
+    height: 35px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__left img {
+  position: relative;
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-bottom: 0px;
+    margin-top: -77px;
+}
+
+.header__logo {
+    margin-top: -5px;
+    /* width: 200px; */
+    padding-bottom: 20px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: #eef3f8;
+    padding: 3px 10px;
+}
+
+.header__search input {
+    background-color: transparent;
+    border: 0px;
+    outline: 0px;
+    min-width: 2px;
+}
+
+.header__search svg {
+    font-size: 20px;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px;
+    color: #565656; /* Default color for inactive options */
+    position: relative;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.header__options .MuiAvatar-circular {
+    width: 31px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.header__options h3 {
+    color: #565656;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top:-2px;
+}
+
+.header__options--active {
+    color: #000; 
+    text-decoration: underline; 
+    position: relative; /* Needed for the pseudo-element */
+}
+
+/* .header__options--active::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: -5px;
+    background-color: #333;
+    height: 2px;
+    bottom: -5px;
+} */
+
+/* Styling for the dropdown and elements */
+.header__me {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .header__meDropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    z-index: 10;
+    width: 230px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .header__meInfo {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  
+  .header__meInfo strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .header__meInfo p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  /* Styling for the profile and logout buttons */
+  .header__meProfileBtn, 
+  .header__meLogoutBtn {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .header__meProfileBtn {
+    background-color: #0073b1; /* LinkedIn blue */
+  }
+  
+  .header__meProfileBtn:hover {
+    background-color: #005b8c;
+  }
+  
+  .header__meLogoutBtn {
+    background-color: #d9534f; /* Red for logout */
+  }
+  
+  .header__meLogoutBtn:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Hover effect for the dropdown */
+  .header__meDropdown:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .header {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15%;
+    justify-content: space-between;
+    height: 35px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__logo {
+    margin-top: -5px;
+    width: 60px !important;
+    height: 60px !important;
+    padding-bottom: 20px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: #eef3f8;
+    padding: 3px 10px;
+    position: relative; /* Add relative positioning */
+}
+
+.header__search input {
+    background-color: transparent;
+    border: 0px;
+    outline: 0px;
+    min-width: 2px;
+}
+
+.header__search svg {
+    font-size: 20px;
+    align-items: center;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%; /* Aligns below the input field */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto; /* Scroll if there are too many suggestions */
+    z-index: 1000; /* Ensure the suggestions appear on top */
+}
+
+.suggestion {
+    padding: 8px;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+
+.input-wrapper {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto; /* Scroll if there are too many suggestions */
+  z-index: 1000; /* Ensure the suggestions appear on top */
+}
+
+.suggestion {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.suggestion:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+

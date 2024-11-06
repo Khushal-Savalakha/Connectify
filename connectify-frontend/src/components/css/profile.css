@@ -1,0 +1,315 @@
+
+.profile-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f3f2ef;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    height:79vh;
+    margin-left:140px;
+}
+
+/* Profile Section Styling */
+.profile {
+    /* max-width: 800px; */
+    width:60vw;
+    /* height:60vh; */
+    /* margin: 20px auto; */
+    margin-right:40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Image Section */
+.profile__background {
+    position: relative;
+    height: 200px;
+    background-color: #f3f3f3;
+}
+
+.profile__backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile Details */
+.profile__details {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.profile__avatar {
+    margin-top: -150px;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.profile__name {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile__headline {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.profile__location {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.profile__email {
+    color: #0073b1;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile__connections {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile__connectionsLink {
+    color: #0073b1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Button Styling */
+.profile__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile__button {
+    border: 1px solid #0073b1;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #0073b1;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile__button.primary {
+    background-color: #0073b1;
+    color: white;
+}
+
+/* Open to Work Section */
+.profile__openTo {
+    background-color: rgb(221, 231, 241); 
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.profile__openTo span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.profile__openTo p {
+    margin: 0; 
+}
+
+
+.edit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.right-sidebar {
+    width: 20vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.sidebar-section {
+    margin-bottom: 25px;
+}
+
+.sidebar-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.sidebar-ad {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ad-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .profile-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile, .right-sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile__buttons {
+        flex-direction: column;
+    }
+}
+
+
+/* General Form Styles */
+form {
+    max-width: 600px; /* Limit the form width */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    margin: 10px 0; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image Upload Styles */
+.upload-label {
+    display: block; /* Block display for the label */
+    margin: 10px 0; /* Spacing around the label */
+    cursor: pointer; /* Pointer cursor for upload label */
+}
+
+.upload-preview {
+    width: 100%; /* Full width for image preview */
+    max-height: 200px; /* Limit height */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above the image preview */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width button on small screens */
+    }
+}
+
+
+/* General Button Styles */
+button {
+    background-color: #0073b1; /* LinkedIn's primary blue color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    outline: none; /* Remove default outline */
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: rgb(252, 242, 214); /* Darker blue on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+/* Active Effect */
+button:active {
+    background-color: #d0e2d2; /* Even darker color on active */
+    transform: translateY(0); /* Reset lift effect */
+    box-shadow: none; /* Remove shadow on click */
+}
+
+/* Disabled Button Styles */
+button:disabled {
+    background-color: #d9d9d9; /* Light gray for disabled state */
+    color: #a6a6a6; /* Gray text */
+    cursor: not-allowed; /* Not allowed cursor */
+    box-shadow: none; /* No shadow on disabled */
+}

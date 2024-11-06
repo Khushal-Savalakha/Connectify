@@ -1,0 +1,122 @@
+/* Container for the entire login screen */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f2ef;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Box that contains the form */
+.login__box {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding-top: 0px;
+    height: 400px;
+}
+
+/* Login form title */
+.login__brand {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.login__logo .login__logo-img {
+    margin-top: -50px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+/* Input fields styling */
+.login__input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect on input fields */
+.login__input:focus {
+    outline: none;
+    border-color: #0073b1;
+}
+
+/* Button styling */
+.login__button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #0073b1;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Hover effect for the button */
+.login__button:hover {
+    background-color: #005582;
+}
+
+/* Footer text styling */
+.login__footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Login link styling */
+.login__link {
+    color: #0073b1;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover effect for the login link */
+.login__link:hover {
+    color: #005582;
+}
+
+.login__form{
+    margin-top: -130px;
+}
+
+/* .login-hero__content{
+    margin-top: -150px;
+    margin-bottom:100px;
+} */
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .login__box {
+        padding: 30px;
+    }
+
+    .login__brand {
+        font-size: 24px;
+    }
+
+    .login__input {
+        padding: 10px;
+    }
+
+    .login__button {
+        padding: 10px;
+    }
+}

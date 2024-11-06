@@ -1,0 +1,148 @@
+.feed {
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    margin: 0px 30px;
+  }
+  
+  .feed__input {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    /* border-radius: 10px; */
+    border: none;
+    flex-direction: column;
+  }
+  
+  .feed__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .feed__form form {
+    display: flex;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+    flex: 1;
+    border: none;
+  }
+  
+  .feed__form form input[type='text'] {
+    flex: 1;
+    border-radius: 30px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    height: 40px;
+    outline: 0;
+    /* border: 1px solid #ccc; */
+    height:55px;
+    background-color: #f9f7f7;
+    font-size:17px;
+  }
+  
+  .feed__form form input[type='submit'] {
+    display: none;
+  }
+  
+  .feed__form form input[type='text']::placeholder {
+    color: black; 
+    font-size:15px;
+    
+  }
+  
+  .feed__options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .feed__options .option {
+    display: flex; /* Ensures flex layout for icon and text */
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    /* border-radius: 5px; */
+    padding:10px 10px;
+    border: none;
+  }
+
+  .feed__options .option svg{
+    margin-right: 10px;
+  }
+  
+  .feed__options .option:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .feed__options .option span {
+    margin-left: 5px; /* Adds space between icon and text */
+    border: none;
+  }
+  
+  .feed .MuiAvatar-circular{
+    margin-top:-13px;
+    width:55px;
+    height: 55px;
+    margin-right:-10px;
+  }
+
+  .feed__options .option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.feed__options .option:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.feed__options .option .icon {
+    margin-right: 10px;
+}
+
+.image-upload-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 10px;
+}
+
+.image-upload-actions {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 10px;
+}
+
+.cancel-button {
+    background-color: #e7e7e7; /* Light grey background */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    padding: 5px 10px; /* Padding for the button */
+    color: black;
+}
+
+.cancel-button:hover {
+    background-color: rgb(233, 183, 183); /* Darker grey on hover */
+}
+
+.feed .MuiAvatar-circular {
+    margin-top: -13px;
+    width: 55px;
+    height: 55px;
+    margin-right: -10px;
+}
